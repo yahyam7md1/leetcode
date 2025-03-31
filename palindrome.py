@@ -15,5 +15,5 @@ def isPalindrome(x):
             right -= 1  # Move the right pointer inward
         
         return True  # If all pairs matched, it's a palindrome
-result = isPalindrome(122) # Example usage
+result = isPalindrome(121) # Example usage
 print(result)  # Output: True
