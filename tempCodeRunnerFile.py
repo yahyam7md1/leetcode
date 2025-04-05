@@ -1,29 +1,15 @@
-def romanToInt(self, s):
-       
-        # Step 1: Map of Roman numerals to their integer values
-        roman_map = {
-            'I': 1,
-            'V': 5,
-            'X': 10,
-            'L': 50,
-            'C': 100,
-            'D': 500,
-            'M': 1000
-        }
+def longestCommonPrefix(strs):
+   res = ""
 
-        total = 0  # This will store the final result
+   for i in range(len(strs[0])):
+        for j in strs:
+            if i == len(j) and j[i] != strs[0][i]:
+                return res
+            res += strs[0][i]
 
-        # Step 2: Loop through the string
-        for i in range(len(s)):
-            current_value = roman_map[s[i]]
+            return res
 
-            # Step 3: Check if this is a subtractive case
-            if i < len(s) - 1 and current_value < roman_map[s[i + 1]]:
-                total -= current_value
-            else:
-                total += current_value
-
-        return total
+            
 # Example usage:
-result = romanToInt("IV")  # Example usage
-print(result)  # Output: 3
+strs = ["keko", "keow", "keght"]
+print(longestCommonPrefix(strs))  # Output: "fl"
