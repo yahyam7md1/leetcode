@@ -1,4 +1,4 @@
-def romanToInt(self, s):
+def romanToInt(s):
        
         # Step 1: Map of Roman numerals to their integer values
         roman_map = {

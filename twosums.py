@@ -1,4 +1,4 @@
-def two_sum(nums, target):
+def twoSum(nums, target):
     num_map = {}  # Dictionary to store (value, index)
 
     for i, keko in enumerate(nums):
