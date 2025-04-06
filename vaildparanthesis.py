@@ -1,24 +1,24 @@
 def isValid(s):
     if '(' in s:
         if ')' not in s:
-            return print("not valid")
-        return print("valid")
+            return bool(0)
+        return bool(1)
         
 
     if '{' in s:
         if '}' not in s:
-            return print("not valid")
-        return print("valid")
+            return bool(0)
+        return bool(1)
     
         
     if '[' in s:
         if ']' not in s:
-            return print("not valid")
-        return print("valid")
+            return bool(0)
+        return bool(1)
     
     #testing for vaild parenthesis
 
-s= "("
+s= "{}"
 result = isValid(s)
 print(result)
     

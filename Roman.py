@@ -15,7 +15,7 @@ def romanToInt(s):
 
         # Step 2: Loop through the string
         for i in range(len(s)):
-            current_value = roman_map[s[i]]
+            current_value = roman_map[s[i]] # we put s[i] in the roman_map to get the value of the current roman number in the dictionary.
 
             # Step 3: Check if this is a subtractive case
             if i < len(s) - 1 and current_value < roman_map[s[i + 1]]:
